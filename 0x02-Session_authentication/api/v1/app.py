@@ -49,6 +49,7 @@ def validate_auth() -> None:
     """ Validates authentication if needed
     """
     if auth:
+        request.current_user = auth.current_user(request)
         excluded_paths = [
             '/api/v1/status/',
             '/api/v1/unauthorized/',
@@ -64,4 +65,4 @@ def validate_auth() -> None:
 if __name__ == "__main__":
     host = getenv("API_HOST", "0.0.0.0")
     port = getenv("API_PORT", "5000")
-    app.run(host=host, port=port)
+    app.run(host=host, port=port
