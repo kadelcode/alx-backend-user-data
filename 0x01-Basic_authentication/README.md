@@ -6,7 +6,7 @@ In the industry, you should not implement your own Basic authentication system a
 
 
 
-##Resources
+## Resources
 **Read or watch**:
 
 - [REST API Authentication Mechanisms](https://www.youtube.com/watch?v=501dpx2IjGY)
